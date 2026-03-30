@@ -1,5 +1,9 @@
-input 5
-input2 24
-totalDay 146
-totalDay 6
-answer THU
+answer 5, 10
+
+=== 다음 테스트 케이스 ===
+
+answer 1, 2, 3, 36
+
+=== 다음 테스트 케이스 ===
+
+answer -1
