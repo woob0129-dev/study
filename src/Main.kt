@@ -18,7 +18,7 @@ fun main() {
         }
 
         val input = token
-        val input2 = scanner.nextLine()
+//        val input2 = scanner.nextLine()
 
 //        val answer = solution12901(input.toInt(), input2.toInt())
 //        val answer = solution12903(input)
