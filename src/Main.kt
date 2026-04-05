@@ -29,3 +29,21 @@ fun main() {
 
     }
 }
+
+fun convertIntArray(input: String): IntArray {
+    return input.split(", ").map { it.toInt() }.toIntArray()
+}
+
+fun convertStringArray(input: String): Array<String> {
+    return input.split(", ").map { it }.toTypedArray()
+}
+
+fun convertTwoIntArray(input: String): Array<IntArray> {
+    return input.removePrefix("[[")
+        .removeSuffix("]]")
+        .split("],[")
+        .map { row ->
+            row.split(",").map { it.toInt() }.toIntArray()
+        }
+        .toTypedArray()
+}
