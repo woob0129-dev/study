@@ -1,5 +1,4 @@
-import codetest.programmers.lv1.solution12903
-import codetest.programmers.lv1.solution12910
+import codetest.programmers.lv1.*
 import java.io.File
 import java.util.Scanner
 
@@ -8,7 +7,7 @@ import java.util.Scanner
 fun main() {
     val scanner = Scanner(File("src/input"))
 
-    println("\n=== === === === === ===\n")
+    println("\n=======================\n")
     while (scanner.hasNext()) {
 
         val token = scanner.nextLine()
@@ -19,23 +18,59 @@ fun main() {
 
         val input = token
         val input2 = scanner.nextLine()
+//        val input3 = scanner.nextLine()
 
 //        val answer = solution12901(input.toInt(), input2.toInt())
 //        val answer = solution12903(input)
-        val answer = solution12910(input.split(", ").map { it.toInt() }.toIntArray(), input2.toInt())
+//        val answer = solution12910(convertIntArray(input), input2.toInt())
+//        val answer = solution12912(input.toInt(), input2.toInt())
+//        val answer = solution12915(convertStringArray(input), input2.toInt())
+//        val answer = solution12917(input)
+//        val answer = solution12918(input)
+//        val answer = solution12919(convertStringArray(input))
+//        val answer = solution12922(input.toInt())
+//        val answer = solution12925(input)
+//        val answer = solution12926(input, input2.toInt())
+//        val answer = solution12928(input.toInt())
+//        val answer = solution12930(input)
+//        val answer = solution12931(input.toInt())
+//        val answer = solution12932(input.toLong())
+//        val answer = solution12933(input.toLong())
+//        val answer = solution12934(input.toLong())
+//        val answer = solution12935(convertIntArray(input))
+//        val answer = solution12937(input.toInt())
+//        val answer = solution12940(input.toInt(), input2.toInt())
+//        val answer = solution12943(input.toInt())
+//        val answer = solution12944(convertIntArray(input))
+//        val answer = solution12947(input.toInt())
+//        val answer = solution12948(input)
+//        val answer = solution12950(convertTwoIntArray(input), convertTwoIntArray(input2))
+//        val answer = solution12954(input.toInt(), input2.toInt())
+//        val answer = solution12969(input.toInt(), input2.toInt())
+//        val answer = solution12977(convertIntArray(input))
+//        val answer = solution42748(convertIntArray(input), convertTwoIntArray(input2))
+//        val answer = solution42840(convertIntArray(input))
+//        val answer = solution42862(input.toInt(), convertIntArray(input2), convertIntArray(input3))
+//        val answer = solution42889(input.toInt(), convertIntArray(input2))
+        val answer = solution64061(convertTwoIntArray(input), convertIntArray(input2))
 
-    //    println("answer $answer")
-        println("answer ${answer.joinToString()}")
+
+
+        println("answer")
+
+        println(answer)
+//        println(answer.joinToString(" "))
+//        println(answer.joinToString("\n") { it.joinToString(" ") })
 
     }
 }
 
 fun convertIntArray(input: String): IntArray {
-    return input.split(", ").map { it.toInt() }.toIntArray()
+    return input.split(",").map { it.toInt() }.toIntArray()
 }
 
 fun convertStringArray(input: String): Array<String> {
-    return input.split(", ").map { it }.toTypedArray()
+    return input.split(",").map { it }.toTypedArray()
 }
 
 fun convertTwoIntArray(input: String): Array<IntArray> {
