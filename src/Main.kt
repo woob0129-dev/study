@@ -17,7 +17,7 @@ fun main() {
         }
 
         val input = token
-        val input2 = scanner.nextLine()
+//        val input2 = scanner.nextLine()
 //        val input3 = scanner.nextLine()
 
 //        val answer = solution12901(input.toInt(), input2.toInt())
@@ -52,14 +52,16 @@ fun main() {
 //        val answer = solution42840(convertIntArray(input))
 //        val answer = solution42862(input.toInt(), convertIntArray(input2), convertIntArray(input3))
 //        val answer = solution42889(input.toInt(), convertIntArray(input2))
-        val answer = solution64061(convertTwoIntArray(input), convertIntArray(input2))
+//        val answer = solution64061(convertTwoIntArray(input), convertIntArray(input2))
+//        val answer = solution67256(convertIntArray(input), input2)
+        val answer = solution68644(convertIntArray(input))
 
 
 
         println("answer")
 
-        println(answer)
-//        println(answer.joinToString(" "))
+//        println(answer)
+        println(answer.joinToString(" "))
 //        println(answer.joinToString("\n") { it.joinToString(" ") })
 
     }
