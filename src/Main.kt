@@ -17,8 +17,8 @@ fun main() {
         }
 
         val input = token
-//        val input2 = scanner.nextLine()
-//        val input3 = scanner.nextLine()
+        val input2 = scanner.nextLine()
+        val input3 = scanner.nextLine()
 
 //        val answer = solution12901(input.toInt(), input2.toInt())
 //        val answer = solution12903(input)
@@ -54,21 +54,30 @@ fun main() {
 //        val answer = solution42889(input.toInt(), convertIntArray(input2))
 //        val answer = solution64061(convertTwoIntArray(input), convertIntArray(input2))
 //        val answer = solution67256(convertIntArray(input), input2)
-        val answer = solution68644(convertIntArray(input))
-
-
+//        val answer = solution68644(convertIntArray(input))
+//        val answer = solution68935(input.toInt())
+//        val answer = solution70128(convertIntArray(input), convertIntArray(input2))
+//        val answer = solution72410(input)
+//        val answer = solution76501(convertIntArray(input), convertBooleanArray(input2))
+//        val answer = solution77484(convertIntArray(input), convertIntArray(input2))
+//        val answer = solution77884(input.toInt(), input2.toInt())
+//        val answer = solution81301(input)
+        val answer = solution82612(input.toInt(), input2.toInt(), input3.toInt())
 
         println("answer")
-
-//        println(answer)
-        println(answer.joinToString(" "))
+        println(answer)
+//        println(answer.joinToString(" "))
 //        println(answer.joinToString("\n") { it.joinToString(" ") })
 
     }
 }
 
 fun convertIntArray(input: String): IntArray {
-    return input.split(",").map { it.toInt() }.toIntArray()
+    return input.split(", ").map { it.toInt() }.toIntArray()
+}
+
+fun convertBooleanArray(input: String): BooleanArray {
+    return input.split(",").map { it.toBoolean() }.toBooleanArray()
 }
 
 fun convertStringArray(input: String): Array<String> {
